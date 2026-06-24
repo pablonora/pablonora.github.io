@@ -109,10 +109,11 @@ h1, h2, h3, p { margin: 0; }
 .nav__links a { font-size: 13.5px; color: var(--ink-soft); transition: color .2s var(--ease); white-space: nowrap; }
 .nav__links a:hover { color: var(--ink); }
 .nav__cta {
-  border: 1px solid var(--line-2); border-radius: 999px;
-  padding: 8px 16px; color: var(--ink) !important;
+  background: var(--accent); border: 1px solid var(--accent); border-radius: 999px;
+  padding: 8px 18px; color: var(--accent-ink) !important; font-weight: 600;
+  transition: background .2s var(--ease), border-color .2s var(--ease), transform .2s var(--ease);
 }
-.nav__cta:hover { border-color: var(--accent); color: var(--accent) !important; }
+.nav__cta:hover { background: var(--accent-2); border-color: var(--accent-2); color: var(--accent-ink) !important; transform: translateY(-1px); }
 .nav__toggle { display: none; }
 
 /* ---------- buttons ---------- */
@@ -416,6 +417,25 @@ h1, h2, h3, p { margin: 0; }
 .contact__links { margin-top: 40px; display: flex; justify-content: center; gap: 28px; flex-wrap: wrap; }
 .contact__links a { font-family: var(--font-mono); font-size: 14px; color: var(--ink-soft); transition: color .2s var(--ease); }
 .contact__links a:hover { color: var(--ink); }
+
+/* ---------- back to top ---------- */
+.to-top {
+  position: fixed; right: clamp(16px, 4vw, 32px); bottom: clamp(16px, 4vw, 32px);
+  z-index: 30; width: 46px; height: 46px; border-radius: 50%;
+  display: grid; place-items: center;
+  background: rgba(17, 20, 27, 0.8); backdrop-filter: blur(8px);
+  border: 1px solid var(--line-2); color: var(--accent); cursor: pointer;
+  opacity: 0; transform: translateY(14px); pointer-events: none;
+  transition: opacity .3s var(--ease), transform .3s var(--ease),
+              border-color .2s var(--ease), background .2s var(--ease), color .2s var(--ease);
+}
+.to-top.show { opacity: 1; transform: none; pointer-events: auto; }
+.to-top:hover { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); transform: translateY(-2px); }
+.to-top svg { width: 18px; height: 18px; }
+@media (prefers-reduced-motion: reduce) {
+  .to-top { transition: opacity .2s linear; transform: none; }
+  .to-top.show { transform: none; }
+}
 
 /* ---------- footer ---------- */
 .footer {

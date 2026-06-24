@@ -11,14 +11,26 @@
   var yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = String(new Date().getFullYear());
 
-  /* ---- nav background on scroll ---- */
+  /* ---- nav background + back-to-top on scroll ---- */
   var nav = document.getElementById('nav');
+  var toTop = document.querySelector('.to-top');
   var onScroll = function () {
-    if (window.scrollY > 24) nav.classList.add('scrolled');
+    var y = window.scrollY;
+    if (y > 24) nav.classList.add('scrolled');
     else nav.classList.remove('scrolled');
+    if (toTop) {
+      if (y > 600) toTop.classList.add('show');
+      else toTop.classList.remove('show');
+    }
   };
   onScroll();
   window.addEventListener('scroll', onScroll, { passive: true });
+
+  if (toTop) {
+    toTop.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
+    });
+  }
 
   /* ---- mobile menu ---- */
   var toggle = document.querySelector('.nav__toggle');
