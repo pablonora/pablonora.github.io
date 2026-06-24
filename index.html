@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#08090c" />
+
+  <!-- Primary Meta -->
+  <title>Pablo Nora — Senior Software Engineer &amp; Applied AI Engineer</title>
+  <meta name="description" content="Pablo Nora is a Senior Software Engineer and Applied AI Engineer with 10+ years building and scaling high-performance systems for top US &amp; EU companies. LLM orchestration, RAG, autonomous agents, TypeScript/Node.js, distributed systems." />
+  <meta name="author" content="Pablo Nora" />
+  <meta name="keywords" content="Pablo Nora, Senior Software Engineer, Applied AI Engineer, LLM Orchestration, RAG, LangChain, Autonomous Agents, MCP, TypeScript, Node.js, Distributed Systems, Core Web Vitals, Remote Engineer Brazil" />
+  <link rel="canonical" href="https://pablonora.github.io/" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://pablonora.github.io/" />
+  <meta property="og:title" content="Pablo Nora — Senior Software Engineer &amp; Applied AI Engineer" />
+  <meta property="og:description" content="10+ years building and scaling high-performance systems for top US &amp; EU companies. Now focused on Applied AI: LLM orchestration, RAG, autonomous agents, MCP." />
+  <meta property="og:image" content="https://pablonora.github.io/assets/og-image.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Pablo Nora — Senior Software Engineer &amp; Applied AI Engineer" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="Pablo Nora" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Pablo Nora — Senior Software Engineer &amp; Applied AI Engineer" />
+  <meta name="twitter:description" content="10+ years building and scaling high-performance systems for top US &amp; EU companies. Now focused on Applied AI." />
+  <meta name="twitter:image" content="https://pablonora.github.io/assets/og-image.png" />
+  <meta name="twitter:image:alt" content="Pablo Nora — Senior Software Engineer &amp; Applied AI Engineer" />
+
+  <!-- Icons -->
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/favicon.svg" />
+  <link rel="manifest" href="site.webmanifest" />
+
+  <!-- Fonts: preconnect + display swap for low CLS/LCP -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" /></noscript>
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- import map so the WebGL module can resolve three.js -->
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"
+    }
+  }
+  </script>
+
+  <!-- Structured data: Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Pablo Nora",
+    "givenName": "Pablo",
+    "familyName": "Nora",
+    "url": "https://pablonora.github.io/",
+    "image": "https://pablonora.github.io/assets/og-image.svg",
+    "jobTitle": "Senior Software Engineer & Applied AI Engineer",
+    "email": "mailto:pablolmnora@gmail.com",
+    "telephone": "+55-35-99835-7089",
+    "description": "Senior Software Engineer and Applied AI Engineer with 10+ years building and scaling high-performance full-stack systems for top US and EU companies.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "Minas Gerais",
+      "addressCountry": "BR"
+    },
+    "knowsLanguage": ["en", "pt-BR"],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Swapcard"
+    },
+    "alumniOf": [
+      { "@type": "EducationalOrganization", "name": "UNIPDS" },
+      { "@type": "EducationalOrganization", "name": "Udacity" },
+      { "@type": "EducationalOrganization", "name": "FAI - Centro de Ensino Superior em Gestão, Tecnologia e Educação" }
+    ],
+    "knowsAbout": [
+      "LLM Orchestration", "Retrieval-Augmented Generation", "Autonomous Agents",
+      "Model Context Protocol", "TypeScript", "Node.js", "Distributed Systems",
+      "React", "Next.js", "Computer Vision", "Core Web Vitals", "Technical SEO",
+      "AWS", "Scalable Architecture", "Observability"
+    ],
+    "sameAs": [
+      "https://www.linkedin.com/in/pablonora/",
+      "https://github.com/pablonora"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- WebGL neural canvas (decorative, behind content) -->
+  <canvas id="neural" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Nav -->
+  <header class="nav" id="nav">
+    <a class="nav__brand" href="#top" aria-label="Pablo Nora — home">
+      <span class="nav__mark">PN</span>
+      <span class="nav__sig">Pablo&nbsp;Nora</span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#recommendations">Recommendations</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a class="nav__cta" href="assets/Pablo_Nora_CV.pdf" target="_blank" rel="noopener">CV</a>
+    </nav>
+    <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main id="main">
+    <span id="top"></span>
+
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__inner">
+        <p class="hero__eyebrow reveal">
+          <span class="dot"></span> Senior Software Engineer · Applied AI Engineer
+        </p>
+        <h1 class="hero__title" id="hero-title">
+          <span class="reveal" style="--d:1">Building intelligent,</span>
+          <span class="reveal" style="--d:2">production-grade systems</span>
+          <span class="reveal accent" style="--d:3">that hold up at scale.</span>
+        </h1>
+        <p class="hero__lede reveal" style="--d:4">
+          10+ years shipping high-performance full-stack systems for top
+          <strong>US &amp; EU</strong> companies — now focused on
+          <strong>Applied AI</strong>: LLM orchestration, RAG, autonomous agents and MCP,
+          built on deep TypeScript / Node.js and distributed-systems expertise.
+        </p>
+        <div class="hero__actions reveal" style="--d:5">
+          <a class="btn btn--primary" href="#work">View selected work <span aria-hidden="true">→</span></a>
+          <a class="btn btn--ghost" href="#contact">Get in touch</a>
+        </div>
+        <ul class="hero__meta reveal" style="--d:6" aria-label="Quick facts">
+          <li><span class="mono">10+</span> yrs experience</li>
+          <li><span class="mono">98+</span> Core Web Vitals</li>
+          <li><span class="mono">4</span> countries shipped across</li>
+          <li>Brazil · Remote · Global</li>
+        </ul>
+      </div>
+      <a class="hero__scroll" href="#work" aria-label="Scroll to work">
+        <span class="mono">scroll</span>
+        <span class="hero__scroll-line"></span>
+      </a>
+    </section>
+
+    <!-- MARQUEE / TRUST -->
+    <section class="strip" aria-label="Companies and focus">
+      <div class="strip__track">
+        <span>Swapcard</span><span class="sep">/</span>
+        <span>NerdWallet</span><span class="sep">/</span>
+        <span>Scalable Path</span><span class="sep">/</span>
+        <span>AiXpert</span><span class="sep">/</span>
+        <span>Plauth Studios</span><span class="sep">/</span>
+        <span>LLM Orchestration</span><span class="sep">/</span>
+        <span>RAG</span><span class="sep">/</span>
+        <span>Autonomous Agents</span><span class="sep">/</span>
+        <span>MCP</span><span class="sep">/</span>
+        <span>Distributed Systems</span><span class="sep">/</span>
+        <!-- duplicated for seamless loop -->
+        <span aria-hidden="true">Swapcard</span><span class="sep" aria-hidden="true">/</span>
+        <span aria-hidden="true">NerdWallet</span><span class="sep" aria-hidden="true">/</span>
+        <span aria-hidden="true">Scalable Path</span><span class="sep" aria-hidden="true">/</span>
+        <span aria-hidden="true">AiXpert</span><span class="sep" aria-hidden="true">/</span>
+        <span aria-hidden="true">Plauth Studios</span><span class="sep" aria-hidden="true">/</span>
+        <span aria-hidden="true">LLM Orchestration</span><span class="sep" aria-hidden="true">/</span>
+        <span aria-hidden="true">RAG</span><span class="sep" aria-hidden="true">/</span>
+        <span aria-hidden="true">Autonomous Agents</span><span class="sep" aria-hidden="true">/</span>
+        <span aria-hidden="true">MCP</span><span class="sep" aria-hidden="true">/</span>
+        <span aria-hidden="true">Distributed Systems</span><span class="sep" aria-hidden="true">/</span>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats" aria-label="Impact at a glance">
+      <div class="stats__grid">
+        <div class="stat reveal">
+          <span class="stat__num" data-count="10" data-suffix="+">10+</span>
+          <span class="stat__label">Years engineering at scale</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat__num">Millions</span>
+          <span class="stat__label">Of users served worldwide</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat__num">US &amp; EU</span>
+          <span class="stat__label">Top companies, fully remote</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat__num">Applied AI</span>
+          <span class="stat__label">LLMs, RAG, agents &amp; MCP</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section class="section" id="work" aria-labelledby="work-title">
+      <header class="section__head reveal">
+        <p class="section__kicker mono">01 — Selected Work</p>
+        <h2 class="section__title" id="work-title">Things I’ve designed, shipped&nbsp;and&nbsp;owned.</h2>
+      </header>
+
+      <div class="work">
+        <!-- Flagship: Transparency Dashboard -->
+        <article class="work__item work__item--feature reveal">
+          <div class="work__media" aria-hidden="true">
+            <svg class="viz-svg viz-net" viewBox="0 0 480 280" preserveAspectRatio="xMidYMid slice">
+              <defs>
+                <radialGradient id="netGlow" cx="50%" cy="48%" r="62%">
+                  <stop offset="0%" stop-color="#45e3a0" stop-opacity="0.16"/>
+                  <stop offset="100%" stop-color="#45e3a0" stop-opacity="0"/>
+                </radialGradient>
+              </defs>
+              <rect width="480" height="280" fill="#0a0d11"/>
+              <rect width="480" height="280" fill="url(#netGlow)"/>
+              <g stroke="#45e3a0" stroke-opacity="0.20" stroke-width="1">
+                <line x1="240" y1="138" x2="150" y2="120"/>
+                <line x1="240" y1="138" x2="330" y2="120"/>
+                <line x1="240" y1="138" x2="196" y2="48"/>
+                <line x1="240" y1="138" x2="300" y2="214"/>
+                <line x1="240" y1="138" x2="240" y2="250"/>
+                <line x1="150" y1="120" x2="110" y2="70"/>
+                <line x1="150" y1="120" x2="78"  y2="168"/>
+                <line x1="150" y1="120" x2="150" y2="224"/>
+                <line x1="330" y1="120" x2="356" y2="66"/>
+                <line x1="330" y1="120" x2="402" y2="150"/>
+                <line x1="330" y1="120" x2="440" y2="90"/>
+                <line x1="402" y1="150" x2="420" y2="210"/>
+                <line x1="402" y1="150" x2="440" y2="90"/>
+                <line x1="300" y1="214" x2="420" y2="210"/>
+                <line x1="300" y1="214" x2="240" y2="250"/>
+                <line x1="78"  y1="168" x2="60"  y2="230"/>
+                <line x1="150" y1="224" x2="60"  y2="230"/>
+              </g>
+              <g stroke="#8ff5cc" stroke-width="1.6" stroke-linecap="round" fill="none">
+                <line class="flow" x1="240" y1="138" x2="150" y2="120"/>
+                <line class="flow" x1="330" y1="120" x2="402" y2="150"/>
+                <line class="flow" x1="150" y1="120" x2="150" y2="224"/>
+                <line class="flow" x1="300" y1="214" x2="420" y2="210"/>
+              </g>
+              <g fill="#0a0d11" stroke="#45e3a0" stroke-width="1.4">
+                <circle cx="196" cy="48"  r="3"/>
+                <circle cx="110" cy="70"  r="3"/>
+                <circle cx="356" cy="66"  r="3"/>
+                <circle cx="78"  cy="168" r="3"/>
+                <circle cx="300" cy="214" r="3"/>
+                <circle cx="150" cy="224" r="3"/>
+                <circle cx="420" cy="210" r="3"/>
+                <circle cx="60"  cy="230" r="3"/>
+                <circle cx="240" cy="250" r="3"/>
+                <circle cx="440" cy="90"  r="3"/>
+              </g>
+              <g fill="#45e3a0">
+                <circle class="hub" cx="240" cy="138" r="5.5"/>
+                <circle class="hub" cx="150" cy="120" r="4.5"/>
+                <circle class="hub" cx="330" cy="120" r="4.5"/>
+                <circle class="hub" cx="402" cy="150" r="4.5"/>
+              </g>
+            </svg>
+          </div>
+          <div class="work__body">
+            <p class="work__tag mono">Open data · Civic tech · Flagship</p>
+            <h3 class="work__title">Brazil Electoral &amp; Public-Spending Transparency Dashboard</h3>
+            <p class="work__desc">
+              An open-source, fully auditable data pipeline processing <strong>~159M voter
+              records</strong> and <strong>R$174B+</strong> in federal earmarks across all
+              <strong>5,571 municipalities</strong>. Streams 2.3&nbsp;GB of CSV from an 86&nbsp;MB
+              zip in <em>pure Python (stdlib, zero dependencies)</em> — every source pinned by
+              URL + SHA-256 for reproducibility. Shipped as a fully static GitHub Pages site
+              with an interactive Leaflet choropleth.
+            </p>
+            <ul class="work__chips">
+              <li>Python (stdlib)</li><li>Leaflet</li><li>GitHub Pages</li>
+              <li>CI/CD</li><li>SHA-256 manifests</li>
+            </ul>
+            <a class="link-arrow" href="https://pablonora.github.io/transparencia-eleitoral-municipios/" target="_blank" rel="noopener">
+              Explore the dashboard <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </article>
+
+        <div class="work__row">
+          <!-- Exorkizein -->
+          <article class="work__item reveal">
+            <div class="work__media" aria-hidden="true">
+              <svg class="viz-svg viz-eyes" viewBox="0 0 480 280" preserveAspectRatio="xMidYMid slice">
+                <defs>
+                  <radialGradient id="eyeFill" cx="50%" cy="50%" r="62%">
+                    <stop offset="0%"   stop-color="#eafff5"/>
+                    <stop offset="42%"  stop-color="#5ef0ad"/>
+                    <stop offset="100%" stop-color="#0e6b45"/>
+                  </radialGradient>
+                  <radialGradient id="eyeHalo" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%"   stop-color="#45e3a0" stop-opacity="0.6"/>
+                    <stop offset="100%" stop-color="#45e3a0" stop-opacity="0"/>
+                  </radialGradient>
+                  <radialGradient id="vig" cx="50%" cy="44%" r="60%">
+                    <stop offset="52%"  stop-color="#000" stop-opacity="0"/>
+                    <stop offset="100%" stop-color="#000" stop-opacity="0.88"/>
+                  </radialGradient>
+                  <pattern id="scan" width="3" height="3" patternUnits="userSpaceOnUse">
+                    <rect width="3" height="1" fill="#000" opacity="0.22"/>
+                  </pattern>
+                  <filter id="haloBlur" x="-80%" y="-80%" width="260%" height="260%">
+                    <feGaussianBlur stdDeviation="9"/>
+                  </filter>
+                </defs>
+
+                <rect width="480" height="280" fill="#050607"/>
+                <ellipse cx="240" cy="300" rx="250" ry="74" fill="#0b3a28" opacity="0.5" filter="url(#haloBlur)"/>
+
+                <!-- faint claw scratches -->
+                <g stroke="#45e3a0" stroke-opacity="0.12" stroke-width="2" stroke-linecap="round">
+                  <line x1="60" y1="36" x2="118" y2="244"/>
+                  <line x1="82" y1="28" x2="140" y2="236"/>
+                  <line x1="104" y1="44" x2="162" y2="250"/>
+                </g>
+
+                <!-- glowing halos behind the eyes -->
+                <g class="halos" filter="url(#haloBlur)">
+                  <ellipse cx="188" cy="124" rx="48" ry="30" fill="url(#eyeHalo)"/>
+                  <ellipse cx="292" cy="124" rx="48" ry="30" fill="url(#eyeHalo)"/>
+                </g>
+
+                <!-- eyes (outer group tilts them menacingly; inner group blinks) -->
+                <g transform="rotate(11 188 124)">
+                  <g class="eye">
+                    <path d="M159 124 Q188 106 217 124 Q188 142 159 124 Z" fill="url(#eyeFill)"/>
+                    <ellipse cx="188" cy="124" rx="3.4" ry="12.5" fill="#04130d"/>
+                  </g>
+                </g>
+                <g transform="rotate(-11 292 124)">
+                  <g class="eye">
+                    <path d="M263 124 Q292 106 321 124 Q292 142 263 124 Z" fill="url(#eyeFill)"/>
+                    <ellipse cx="292" cy="124" rx="3.4" ry="12.5" fill="#04130d"/>
+                  </g>
+                </g>
+
+                <!-- furrowed brows -->
+                <g stroke="#050607" stroke-width="10" stroke-linecap="round">
+                  <line x1="156" y1="94" x2="216" y2="110"/>
+                  <line x1="324" y1="94" x2="264" y2="110"/>
+                </g>
+
+                <rect width="480" height="280" fill="url(#vig)"/>
+                <rect width="480" height="280" fill="url(#scan)"/>
+              </svg>
+            </div>
+            <div class="work__body">
+              <p class="work__tag mono">Game · Unreal Engine 5 · Lead</p>
+              <h3 class="work__title">Exorkízein</h3>
+              <p class="work__desc">
+                Technical &amp; organizational lead on an upcoming PC horror game (Steam, 2026).
+                Full-stack game dev across systems architecture, gameplay, UI, multiplayer and
+                performance — plus Steam APIs, telemetry, CI/CD, cloud and TTS. Recruited and led
+                a distributed international volunteer team.
+              </p>
+              <ul class="work__chips">
+                <li>C++</li><li>Unreal Engine 5</li><li>Multiplayer</li><li>Steam APIs</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- AiXpert -->
+          <article class="work__item reveal">
+            <div class="work__media" aria-hidden="true">
+              <svg class="viz-svg viz-radar" viewBox="0 0 480 280" preserveAspectRatio="xMidYMid slice">
+                <defs>
+                  <radialGradient id="radarGlow" cx="50%" cy="50%" r="55%">
+                    <stop offset="0%" stop-color="#45e3a0" stop-opacity="0.14"/>
+                    <stop offset="100%" stop-color="#45e3a0" stop-opacity="0"/>
+                  </radialGradient>
+                  <linearGradient id="sweepGrad" x1="0" y1="0" x2="1" y2="0.4">
+                    <stop offset="0%"   stop-color="#45e3a0" stop-opacity="0"/>
+                    <stop offset="100%" stop-color="#45e3a0" stop-opacity="0.45"/>
+                  </linearGradient>
+                </defs>
+                <rect width="480" height="280" fill="#0a0d11"/>
+                <rect width="480" height="280" fill="url(#radarGlow)"/>
+                <g fill="none" stroke="#45e3a0" stroke-opacity="0.24">
+                  <circle cx="240" cy="140" r="42"/>
+                  <circle cx="240" cy="140" r="82"/>
+                  <circle cx="240" cy="140" r="122"/>
+                </g>
+                <g stroke="#45e3a0" stroke-opacity="0.12">
+                  <line x1="118" y1="140" x2="362" y2="140"/>
+                  <line x1="240" y1="18"  x2="240" y2="262"/>
+                </g>
+                <g class="radar-sweep">
+                  <path d="M240 140 L240 18 A122 122 0 0 1 332 63 Z" fill="url(#sweepGrad)"/>
+                  <line x1="240" y1="140" x2="240" y2="18" stroke="#8ff5cc" stroke-width="1.4"/>
+                </g>
+                <g fill="#8ff5cc">
+                  <circle class="blip" cx="300" cy="96"  r="3"/>
+                  <circle class="blip" cx="196" cy="190" r="2.6"/>
+                  <circle class="blip" cx="320" cy="180" r="2.4"/>
+                  <circle class="blip" cx="170" cy="110" r="2.2"/>
+                </g>
+              </svg>
+            </div>
+            <div class="work__body">
+              <p class="work__tag mono">Computer vision · Edge-to-cloud</p>
+              <h3 class="work__title">AiXpert — Transit Intelligence</h3>
+              <p class="work__desc">
+                Architected an edge-to-cloud platform turning thousands of transit buses into
+                live, data-driven nodes. Designed privacy-preserving passenger-counting CV models
+                running on edge cameras, neural behavior analytics synced to vehicle telemetry,
+                and custom-encrypted video streaming — across four countries.
+              </p>
+              <ul class="work__chips">
+                <li>Computer Vision</li><li>Edge AI</li><li>Telemetry</li><li>Privacy by design</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <!-- NerdWallet performance case (feature) -->
+        <article class="work__item work__item--feature work__item--reverse reveal">
+          <div class="work__body">
+            <p class="work__tag mono">Case · Performance &amp; Tech SEO</p>
+            <h3 class="work__title">From sub-50 to 98+ Core Web Vitals for millions of users</h3>
+            <p class="work__desc">
+              At NerdWallet I led a frontend performance and Technical SEO push that moved
+              <strong>100+ components and 10+ apps</strong> from sub-50 to <strong>98+</strong>
+              Core Web Vitals scores on a platform serving millions — blending SSR / ISR / SSG
+              across Next.js and Astro, with deep Datadog observability and 1,000+ code reviews.
+            </p>
+            <ul class="work__chips">
+              <li>Next.js</li><li>Astro</li><li>SSR / ISR / SSG</li><li>Datadog</li><li>AWS</li>
+            </ul>
+          </div>
+          <div class="work__media" aria-hidden="true">
+            <div class="work__viz work__viz--perf">
+              <span class="work__score mono">98<small>+</small></span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience" aria-labelledby="exp-title">
+      <header class="section__head reveal">
+        <p class="section__kicker mono">02 — Experience</p>
+        <h2 class="section__title" id="exp-title">A decade of building for companies people&nbsp;rely&nbsp;on.</h2>
+        <p class="section__sub">Top US &amp; EU teams, healthtech, fintech, media and deep-tech — mostly remote, always distributed.</p>
+      </header>
+
+      <ol class="timeline">
+        <li class="timeline__item reveal">
+          <div class="timeline__when mono">Nov 2025 — Present</div>
+          <div class="timeline__what">
+            <h3>Senior Software Engineer <span class="timeline__org">· Swapcard</span></h3>
+            <p>Dependable platform features and robust backend APIs in heavy TypeScript / Node.js
+              (Docker, Kafka, RabbitMQ, Elasticsearch, GraphQL, MariaDB, Maxwell). High availability
+              and clean data orchestration across distributed services — plus pioneering AI
+              enhancements for engineering workflows.</p>
+          </div>
+        </li>
+        <li class="timeline__item reveal">
+          <div class="timeline__when mono">Mar 2021 — Aug 2025</div>
+          <div class="timeline__what">
+            <h3>Senior Software Engineer <span class="timeline__org">· NerdWallet</span></h3>
+            <p>Scaled and re-architected a high-throughput content platform on AWS for millions of
+              users. Led the Core Web Vitals breakthrough (100+ components, 10+ apps to 98+),
+              modern rendering (Next.js / Astro), Datadog observability and 1,000+ code reviews.</p>
+          </div>
+        </li>
+        <li class="timeline__item reveal">
+          <div class="timeline__when mono">Oct 2023 — Oct 2025</div>
+          <div class="timeline__what">
+            <h3>Lead Developer <span class="timeline__org">· Plauth Studios</span></h3>
+            <p>Technical &amp; organizational lead for Exorkízein (PC horror game, Steam 2026).
+              Systems architecture, gameplay, multiplayer, service integration — leading a
+              distributed international volunteer team.</p>
+          </div>
+        </li>
+        <li class="timeline__item reveal">
+          <div class="timeline__when mono">Oct 2019 — Dec 2021</div>
+          <div class="timeline__what">
+            <h3>Technical Lead <span class="timeline__org">· AiXpert</span></h3>
+            <p>Architected an edge-to-cloud transportation-intelligence platform. Privacy-preserving
+              computer-vision passenger counting on edge cameras, neural behavior analytics and
+              custom-encrypted streaming — coordinating teams across four countries.</p>
+          </div>
+        </li>
+        <li class="timeline__item reveal">
+          <div class="timeline__when mono">May 2017 — Dec 2020</div>
+          <div class="timeline__what">
+            <h3>Senior Software Engineer <span class="timeline__org">· Scalable Path</span></h3>
+            <p>Full-stack consulting and software architecture for international healthtech,
+              research and media companies. Owned backend scalability, custom data modeling,
+              automated testing and unified Docker environments across dev/test/prod.</p>
+          </div>
+        </li>
+        <li class="timeline__item reveal">
+          <div class="timeline__when mono">2015 — 2017</div>
+          <div class="timeline__what">
+            <h3>Junior Systems Analyst <span class="timeline__org">· Datablink</span></h3>
+            <p>Secure Android apps (auth, sync, real-time chat) with CI, and the sole frontend
+              engineer behind management, self-service and partner portals — including JNI
+              integrations between Java services and native C++ libraries.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <header class="section__head reveal">
+        <p class="section__kicker mono">03 — Capabilities</p>
+        <h2 class="section__title" id="skills-title">The stack behind the&nbsp;work.</h2>
+      </header>
+      <div class="skills">
+        <div class="skills__group reveal">
+          <h3 class="skills__name">AI / ML</h3>
+          <ul>
+            <li>LLM Orchestration</li><li>RAG</li><li>LangChain</li>
+            <li>Multi-Agent (ReAct, Plan-and-Execute)</li><li>Model Context Protocol</li>
+            <li>Prompt Engineering</li><li>Fine-tuning (LoRA / PEFT)</li>
+            <li>Vector Databases</li><li>MLOps</li><li>Computer Vision</li>
+          </ul>
+        </div>
+        <div class="skills__group reveal">
+          <h3 class="skills__name">Languages &amp; Frameworks</h3>
+          <ul>
+            <li>TypeScript</li><li>JavaScript</li><li>Node.js</li><li>Python</li>
+            <li>React</li><li>Next.js</li><li>Astro</li><li>C++ (Unreal Engine)</li>
+          </ul>
+        </div>
+        <div class="skills__group reveal">
+          <h3 class="skills__name">Data &amp; Infrastructure</h3>
+          <ul>
+            <li>AWS</li><li>Vercel</li><li>Docker</li><li>Kafka</li><li>RabbitMQ</li>
+            <li>Elasticsearch</li><li>GraphQL</li><li>gRPC</li><li>PostgreSQL</li>
+            <li>MongoDB</li><li>MariaDB</li><li>Datadog</li><li>Grafana</li>
+          </ul>
+        </div>
+        <div class="skills__group reveal">
+          <h3 class="skills__name">Practices</h3>
+          <ul>
+            <li>Distributed Systems</li><li>Scalable Architecture</li><li>Observability</li>
+            <li>CI/CD</li><li>Technical SEO</li><li>Technical Leadership</li>
+            <li>Mentoring &amp; Code Review</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- RECOMMENDATIONS -->
+    <section class="section" id="recommendations" aria-labelledby="rec-title">
+      <header class="section__head reveal">
+        <p class="section__kicker mono">04 — In their words</p>
+        <h2 class="section__title" id="rec-title">What colleagues say.</h2>
+      </header>
+      <div class="quotes">
+        <figure class="quote reveal">
+          <blockquote>
+            “Pablo operated with the experience and pace that matched the full-time engineers on
+            the team, and regularly exceeded our expectations of what a contractor could achieve…
+            one of the few engineers who thrived in that complexity to find good long-term
+            solutions. If there were any way I could continue working with Pablo I would.”
+          </blockquote>
+          <figcaption>
+            <span class="quote__name">Daniel Jost</span>
+            <span class="quote__role mono">Senior Software Engineer · NerdWallet</span>
+          </figcaption>
+        </figure>
+        <figure class="quote reveal">
+          <blockquote>
+            “I can truly say that Pablo is an exceptional engineer… operating at a massive scale
+            and doing very high quality, high value work — all while being the nicest, kindest,
+            most caring person. If you are thinking about hiring Pablo, I would do it!”
+          </blockquote>
+          <figcaption>
+            <span class="quote__name">Braad Martin</span>
+            <span class="quote__role mono">Senior Staff Engineer · NerdWallet</span>
+          </figcaption>
+        </figure>
+      </div>
+      <p class="quotes__note reveal mono">
+        More written recommendations on
+        <a href="https://www.linkedin.com/in/pablonora/" target="_blank" rel="noopener">linkedin.com/in/pablonora</a>
+      </p>
+    </section>
+
+    <!-- ABOUT + EDUCATION -->
+    <section class="section section--split" id="about" aria-labelledby="about-title">
+      <div class="about reveal">
+        <header class="section__head">
+          <p class="section__kicker mono">05 — About</p>
+          <h2 class="section__title" id="about-title">Engineer who ships, and keeps&nbsp;learning.</h2>
+        </header>
+        <p class="about__lede">
+          I’m a Senior Software Engineer with 10+ years building and scaling high-performance
+          full-stack systems for top US and EU companies, now focused on Applied AI Engineering.
+          I take ownership of ambiguous problems, care about software that lasts, and work
+          effectively in distributed, English-first teams.
+        </p>
+        <p class="about__body">
+          My core strengths are scalable distributed systems in TypeScript and Node.js, and
+          applying modern AI — LLM orchestration, RAG and autonomous agents — to real engineering
+          problems. Comfortable across backend architecture, performance and observability. Open
+          to global relocation and remote opportunities.
+        </p>
+      </div>
+      <aside class="edu reveal" aria-label="Education">
+        <h3 class="edu__head mono">Education</h3>
+        <ul class="edu__list">
+          <li>
+            <span class="edu__when mono">Feb 2026 — Feb 2027</span>
+            <strong>Postgraduate Specialization — Software Engineering for Applied AI</strong>
+            <span>UNIPDS · 480h · RAG, autonomous agents, MCP, LoRA/PEFT, MLOps, AI governance</span>
+          </li>
+          <li>
+            <span class="edu__when mono">2017 — 2019</span>
+            <strong>Machine Learning Engineer Nanodegree</strong>
+            <span>Udacity · supervised, unsupervised &amp; reinforcement learning; deep learning</span>
+          </li>
+          <li>
+            <span class="edu__when mono">2012 — 2015</span>
+            <strong>B.Sc. in Information Systems</strong>
+            <span>FAI — Santa Rita do Sapucaí, Brazil</span>
+          </li>
+        </ul>
+        <h3 class="edu__head mono">Languages</h3>
+        <p class="edu__lang">English <span class="mono">— Fluent</span> · Portuguese <span class="mono">— Native</span></p>
+      </aside>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact__inner reveal">
+        <p class="section__kicker mono">06 — Contact</p>
+        <h2 class="contact__title" id="contact-title">Let’s build something<br/>that lasts.</h2>
+        <p class="contact__lede">
+          Open to senior engineering and Applied AI roles — remote or global relocation.
+          The fastest way to reach me:
+        </p>
+        <a class="contact__mail" href="mailto:pablolmnora@gmail.com">pablolmnora@gmail.com</a>
+        <div class="contact__links">
+          <a href="https://www.linkedin.com/in/pablonora/" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a href="https://github.com/pablonora" target="_blank" rel="noopener">GitHub ↗</a>
+          <a href="assets/Pablo_Nora_CV.pdf" target="_blank" rel="noopener">CV (PDF) ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span class="mono">© <span id="year">2026</span> Pablo Nora</span>
+    <span class="mono">Brazil · Remote · Global</span>
+    <span class="mono">Built from scratch — no frameworks, 100% static</span>
+  </footer>
+
+  <script type="module" src="neural.js"></script>
+  <script src="main.js" defer></script>
+</body>
+</html>

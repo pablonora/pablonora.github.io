@@ -1,0 +1,12 @@
+{
+  "name": "Pablo Nora — Senior Software Engineer & Applied AI Engineer",
+  "short_name": "Pablo Nora",
+  "description": "Senior Software Engineer and Applied AI Engineer. LLM orchestration, RAG, autonomous agents, TypeScript/Node.js, distributed systems.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#08090c",
+  "theme_color": "#08090c",
+  "icons": [
+    { "src": "/assets/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

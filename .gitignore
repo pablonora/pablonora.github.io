@@ -1,0 +1,6 @@
+# local dev tooling (preview server / screenshot helpers)
+.claude/
+
+# OS junk
+.DS_Store
+Thumbs.db
